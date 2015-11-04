@@ -95,14 +95,6 @@ exe                         : Binary file
         make build CC=gcc CFLAGS=-O2 LDFLAGS=-lm
       
         ./exe -ID 1 -Data ./SPECT.dat -Niter 1000000 -Npop 5 -Nsam 1000 
-         
-         
-REFERENCES :
------------
-
-Georgios Karagiannis., Bledar A. Konomi, Guang Lin, and Faming Liang (2015). 
-Parallel and Interacting Stochastic Approximation Annealing algorithms for 
-global optimisation, Statistics and Computing.
 
 COMMENTS :
 ----------
