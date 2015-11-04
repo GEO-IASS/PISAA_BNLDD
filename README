@@ -92,7 +92,7 @@ exe                         : Binary file
 
       examples :
       
-        make CC=gcc CFLAGS=-O2 LDFLAGS=-lm
+        make build CC=gcc CFLAGS=-O2 LDFLAGS=-lm
       
         ./exe -ID 1 -Data ./SPECT.dat -Niter 1000000 -Npop 5 -Nsam 1000 
          
@@ -124,6 +124,3 @@ FUTURE UPDATES :
 
 
 
-
-         
-         
