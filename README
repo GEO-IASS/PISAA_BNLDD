@@ -3,6 +3,8 @@ DESCRIPTION :
 
 A C code implementation of PISAA for the Bayesian network learning application with discrete data. 
 
+PISAA is a stochastic optimisation algorithm that aims at overcoming the local trapping issue.
+
 The Single Proton Emission Computed Tomography data-set is included.
 
 Karagiannis, G., Konomi, B., Lin, G., & Liang F. (under revision). 
