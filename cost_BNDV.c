@@ -18,6 +18,9 @@
  * Liang, Faming, Chuanhai Liu, and Raymond Carroll.
  * Advanced Markov chain Monte Carlo methods: learning from past samples.
  * Vol. 714. John Wiley & Sons, 2011.
+ *
+ * Chapter 7
+ *
  * */
 
 #include <stdlib.h>
