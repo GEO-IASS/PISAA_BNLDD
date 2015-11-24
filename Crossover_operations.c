@@ -12,7 +12,7 @@
  * Contact email: georgios.stats@gmail.com
  *
  * Georgios Karagiannis © 2014  
-
+*/
 
 #include <math.h>
 
