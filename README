@@ -59,20 +59,28 @@ makefile                    : Makefile
 
 pisaa.c                     : The main function
 
-Crossover_int_operations.c  : Crossover operations
+Crossover_operations.c      : Crossover operations
+Crossover_operations.h      : Header file
 
-Mutation_int_operations.c   : Mutation operations
-
-MH_int_updates.c            : Metropolis-Hastings updates to generate a seed
+Mutation_operations.c       : Mutation operations
+Mutation_operations.h       : Header file
 
 Self_adjastment_prosedure.c : Functions related to the self adjusting mechanism
+Self_adjastment_prosedure.h : Header file
 
-cost_ising2D.c              : The cost function
+cost_BNDV.c                 : The cost function
+cost_BNDV.h                 : Header file
 
 uniformrng.c                : Uniform random number generator
+permutrng.c                 : Random permutaion generator
+RNG.h                       : Header file
 
 nrutil.c                    : Numerical recipes functions to treat array 
                                 allocations
+nrutil.h                    : Header file
+
+SPECT.dat                   : The Single Proton Emission Computed Tomography 
+                              data-set
 
 output_files                : Folder for the output of the program 
 
@@ -127,8 +135,6 @@ FUTURE UPDATES :
 - Add a flag that allows one to choose to adaptively adjust the mutation and crossover operation proposals.
 
 - Make the code use openMP and openMPI.
-
-- Tidy up the declarations in header files properly.
 
 - Remove the code related to mh0 option.
 
