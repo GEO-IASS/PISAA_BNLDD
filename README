@@ -75,8 +75,7 @@ uniformrng.c                : Uniform random number generator
 permutrng.c                 : Random permutaion generator
 RNG.h                       : Header file
 
-nrutil.c                    : Numerical recipes functions to treat array 
-                                allocations
+nrutil.c                    : Functions to treat array allocations
 nrutil.h                    : Header file
 
 SPECT.dat                   : The Single Proton Emission Computed Tomography 
