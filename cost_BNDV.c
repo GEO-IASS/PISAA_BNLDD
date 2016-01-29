@@ -30,6 +30,9 @@
 #include "nrutil.h"
 #include <stdio.h>
 
+#include "cost_BNDV.h"
+
+
 #ifndef INFINITY
 	#include <float.h>
 	#define INFINITY DBL_MAX

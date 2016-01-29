@@ -17,7 +17,7 @@
 */
 
 /*
- * Georgios Karagiannis 
+ * Georgios Karagiannis
  * Postdoctoral research associate
  * Department of Mathematics, Purdue University
  * 150 N. University Street
@@ -30,24 +30,35 @@
  * Contact email: georgios.stats@gmail.com
 */
 
-#include <stdlib.h>
-#include <math.h>
-#include "RNG.h"
+void Mutation_TemporalOrderChange(int *, int **,
+							double *, double *,
+							int ,
+							int *, int *,
+							double *, double *, int ,
+							double , double *,
+							int *, int **, double *) ;
 
-void permutrng(int *ivec, int n) {
+void Mutation_SkeletalChange(int *, int **,
+							double *, double *,
+							int ,
+							int *, int *,
+							double *, double *, int ,
+							double , double *,
+							int *, int **, double *)  ;
 
-	int i ;
-	int j ;
-	double u ;
-	int itmp ;
+void Mutation_DoubleSkeletalChange(int *, int **,
+							double *, double *,
+							int ,
+							int *, int *,
+							double *, double *, int ,
+							double , double *,
+							int *, int **, double *) ;
 
-	for (i=1; i<=n-1; i++) {
-		u = uniformrng() ;
-		j = i + (int) floor((n-i+1)*u) ;
-        itmp = ivec[j] ;
-        ivec[j] = ivec[i] ;
-        ivec[i] = itmp ;
-	}
 
-}
+
+
+
+
+
+
 

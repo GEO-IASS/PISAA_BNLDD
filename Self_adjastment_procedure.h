@@ -17,7 +17,7 @@
 */
 
 /*
- * Georgios Karagiannis 
+ * Georgios Karagiannis
  * Postdoctoral research associate
  * Department of Mathematics, Purdue University
  * 150 N. University Street
@@ -30,24 +30,21 @@
  * Contact email: georgios.stats@gmail.com
 */
 
-#include <stdlib.h>
-#include <math.h>
-#include "RNG.h"
+void self_adj_grid_points( double *, int , double , double  ) ;
 
-void permutrng(int *ivec, int n) {
+void self_adj_index_search(int *, double , double *, int  ) ;
 
-	int i ;
-	int j ;
-	double u ;
-	int itmp ;
+void self_adj_desired_freq(double *, int , double ) ;
 
-	for (i=1; i<=n-1; i++) {
-		u = uniformrng() ;
-		j = i + (int) floor((n-i+1)*u) ;
-        itmp = ivec[j] ;
-        ivec[j] = ivec[i] ;
-        ivec[i] = itmp ;
-	}
+void self_adj_theta_update(double *, int ,
+						double *, double *, int ,
+						double *, double , double *) ;
 
-}
+void self_adj_theta_norm(double *, double *, double *, int , double ) ;
+
+
+
+
+
+
 

@@ -37,29 +37,11 @@
 #include <time.h>
 #include "nrutil.h"
 
-void setseedrng(unsigned long) ;
-double uniformrng(void) ;
-int integerrng(int,int) ;
-void permutrng(int*,int) ;
-
-void get_data(char[],int*) ;
-double cost(int*,int**,int,double*,int*,int) ;
-
-void self_adj_grid_points(double*,int,double,double) ;
-void self_adj_desired_freq(double*,int,double) ;
-void self_adj_theta_update(double*,int,double*,double*,int,double*,double,double*) ;
-void self_adj_theta_norm(double*,double*,double*,int,double) ;
-
-void Mutation_TemporalOrderChange(int*,int**,double*,double*,int,
-		int*,int*,double*,double*,int,double,double*,int*,int**,double*) ;
-void Mutation_SkeletalChange(int*,int**,double*,double*,int,
-		int*,int*,double*,double*,int,double,double*,int*,int**,double*) ;
-void Mutation_DoubleSkeletalChange(int*,int**,double*,double*,int,
-		int*,int*,double*,double*,int,double,double*,int*,int**,double*) ;
-
-void Crossover_int_Kpoint(int**,int***,double *,double **,int,int ,int*,int**,
-							double*,double*,int, double,double*,
-							int**,int**,int*,double*,double*) ;
+#include "RNG.h"
+#include "cost_BNDV.h"
+#include "Self_adjastment_procedure.h"
+#include "Mutation_operations.h"
+#include "Crossover_operations.h"
 
 double mean_vec(double *x, int d) {
 

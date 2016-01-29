@@ -17,7 +17,7 @@
 */
 
 /*
- * Georgios Karagiannis 
+ * Georgios Karagiannis
  * Postdoctoral research associate
  * Department of Mathematics, Purdue University
  * 150 N. University Street
@@ -30,24 +30,12 @@
  * Contact email: georgios.stats@gmail.com
 */
 
-#include <stdlib.h>
-#include <math.h>
-#include "RNG.h"
+void setseedrng(unsigned long ) ;
 
-void permutrng(int *ivec, int n) {
+double uniformrng(void) ;
 
-	int i ;
-	int j ;
-	double u ;
-	int itmp ;
+int integerrng(int, int ) ;
 
-	for (i=1; i<=n-1; i++) {
-		u = uniformrng() ;
-		j = i + (int) floor((n-i+1)*u) ;
-        itmp = ivec[j] ;
-        ivec[j] = ivec[i] ;
-        ivec[i] = itmp ;
-	}
+void permutrng(int*, int) ;
 
-}
 

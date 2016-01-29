@@ -17,7 +17,7 @@
 */
 
 /*
- * Georgios Karagiannis 
+ * Georgios Karagiannis
  * Postdoctoral research associate
  * Department of Mathematics, Purdue University
  * 150 N. University Street
@@ -30,24 +30,42 @@
  * Contact email: georgios.stats@gmail.com
 */
 
-#include <stdlib.h>
-#include <math.h>
-#include "RNG.h"
+void CO_select_forward_0(double *, int *, int *, int ) ;
 
-void permutrng(int *ivec, int n) {
+void CO_select_backward_0(double *, int ) ;
 
-	int i ;
-	int j ;
-	double u ;
-	int itmp ;
+void CO_select_forward_1(double *, int *, int *,
+						double *, int , double ) ;
 
-	for (i=1; i<=n-1; i++) {
-		u = uniformrng() ;
-		j = i + (int) floor((n-i+1)*u) ;
-        itmp = ivec[j] ;
-        ivec[j] = ivec[i] ;
-        ivec[i] = itmp ;
-	}
+void CO_select_backward_1(double *, int , int ,
+				double *, int , double ) ;
 
-}
+void CO_select_forward_2(double *, int *, int *,
+							double *, int , double ) ;
+
+void CO_select_backward_2(double *, int , int ,
+					double *, int , double ) ;
+
+void CO_select_forward_3(double *, int *, int *,
+			double *, int , double ) ;
+
+void CO_select_backward_3(double *, int , int ,
+			double *, int , double ) ;
+
+void Crossover_int_Kpoint(int **, int ***,
+							double *, double **,
+							int , int ,
+							int *, int **,
+							double *, double *, int ,
+							double , double *,
+							int **, int **, int *,
+							double *, double *) ;
+
+
+
+
+
+
+
+
 

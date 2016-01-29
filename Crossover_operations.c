@@ -31,14 +31,10 @@
 */
 
 #include <math.h>
-
-double uniformrng(void) ;
-
-int integerrng(int,int) ;
-
-double cost(int*,int**,int,double*,int*,int) ;
-
-void self_adj_index_search(int*,double,double*,int) ;
+#include "RNG.h"
+#include "cost_BNDV.h"
+#include "Self_adjastment_procedure.h"
+#include "Crossover_operations.h"
 
 void CO_select_forward_0(double *prob, int *n1, int *n2, int N_population){
 

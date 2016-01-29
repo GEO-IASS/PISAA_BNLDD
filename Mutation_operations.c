@@ -30,19 +30,14 @@
  * Contact email: georgios.stats@gmail.com
 */
 
-
 #include <math.h>
+#include "RNG.h"
+#include "cost_BNDV.h"
+#include "Self_adjastment_procedure.h"
+#include "Mutation_operations.h"
 
 #define MAX(x,y) (((x)>(y))?(x):(y))
 #define MIN(x,y) (((x)<(y))?(x):(y))
-
-double uniformrng(void) ;
-
-int integerrng(int,int) ;
-
-double cost(int*,int**,int,double*,int*,int) ;
-
-void self_adj_index_search(int*,double,double*,int) ;
 
 /* THIS IS THE TEMPORAL ORDER CHANGE METROPOLIS HASTINGS UPDATE */
 
